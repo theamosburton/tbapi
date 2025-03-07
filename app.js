@@ -10,8 +10,7 @@ app.post('/create', (req, res) => {
 });
 
 const PORT = 2001;
-const HOST = "192.168.77.172";
 
-app.listen(PORT, HOST, () => {
-    console.log(`Server running at http://${HOST}:${PORT}/`);
+app.listen(PORT, () => {
+    console.log(`Server running at http://localhost:${PORT}/`);
 });
