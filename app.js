@@ -9,7 +9,7 @@ app.post('/create', (req, res) => {
     res.status(200).json({ walletaddes: true, message: "" });
 });
 
-const PORT = 2001;
+const PORT = 80;
 
 app.listen(PORT, () => {
     console.log(`Server running at http://localhost:${PORT}/`);
