@@ -4,7 +4,7 @@ const app = express();
 const PORT = 3241;
 
 app.post('/create', (req, res) => {
-    console.log(req.body);
+    console.log(req.query);
     res.status(200).json({ status: true, message: "" });
 });
 
