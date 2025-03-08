@@ -2,7 +2,7 @@ const express = require('express');
 const connectDB = require("./dbconnect");
 const app = express();
 const PORT = 3241;
-
+app.use(express.urlencoded({ extended: true }));
 app.post('/create', (req, res) => {
     console.log("📥 Data Received:", req);
     res.status(200).json({ status: "true", message: "hello" });
