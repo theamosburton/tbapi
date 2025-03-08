@@ -10,7 +10,7 @@ app.post('/create', (req, res) => {
 });
 
 app.get('/create', (req, res) => {
-    console.log("📥 Data Received:", req.body);
+    console.log("📥 Data Received:", req.query);
     res.status(200).json({ status: "true", message: "hello" });
 });
 
