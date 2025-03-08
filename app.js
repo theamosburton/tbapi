@@ -8,10 +8,6 @@ app.post('/create', (req, res) => {
     res.status(200).json({ status: "true", message: "hello" });
 });
 
-app.get('/test', (req, res) => {
-    console.log("📥 Data Received:", req);
-    res.status(200).json({ status: "true", message: "hello" });
-});
 
 app.listen(PORT, () => {
     console.log(`Server running on http://localhost:${PORT}`);
